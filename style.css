@@ -63,15 +63,15 @@ header{
     gap: 30px;
 }
 
-.menu .nav-link{
+.nav-link{
     display: block;
     color: #f1f5f9;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
-.menu .nav-link:hover{
+.nav-link:hover{
     color: #fb923c;
 }
 
@@ -89,6 +89,10 @@ header{
     display: flex;
     align-items: center;
     background-size: cover;
+}
+
+.hero-container{
+    width: 80%;
 }
 
 .hero-heading, .hero-subheading{
@@ -208,7 +212,7 @@ header{
 
 .about{
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     color: #020617;
 }
 
@@ -263,13 +267,14 @@ header{
     align-self: center;
 }
 
-.info > h2{
+.skills-heading{
     font-size: 3rem;
 }
 
 .skills{
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
 }
 
 .skill{
@@ -285,13 +290,13 @@ header{
 /* ---------------------------> Contacts <--------------------------- */
 
 .contacts{
-    padding: 60px 10px;
+    padding: 20px 10px;
 }
 
 .contact-links{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -308,4 +313,154 @@ footer{
     color: #f1f5f9;
     font-size: 1.2rem;
     text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .logo{
+        font-size: 2.8;
+    }
+
+    .nav-link{
+        font-size: 1.6;
+    }
+
+    .hero{
+        height: 80vh;
+    }
+    
+    .hero-heading{
+        font-size: 5.6rem;
+    }
+    
+    .hero-subheading{
+        font-size: 3.6rem;
+    }
+    
+    .cta-btn{
+        font-size: 1.8rem;
+    }
+
+    .section-heading{
+        font-size: 3.2rem;
+    }
+
+    .reverse{
+        flex-direction: column;
+    }
+    .project{
+        flex-direction: column;
+        justify-content: start;
+        gap: 45px;
+    }
+    .preview{
+        max-width: 100%;
+    }
+    .project-info{
+        width: 100%;
+        margin-top: -40px;
+    }
+    .project h2{
+        font-size: 2.2rem;
+        margin-bottom: 3px;
+    }
+    
+    .project p {
+        font-size: 1.6rem;
+    }
+    
+    .project a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 900px){
+
+    .container{
+        width: 95%;
+    }
+
+    .hero-container{
+        width: 80%;
+    }
+
+    .separator{
+        height: 20vh;
+    }
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;  
+        margin-top: 30px;
+        padding: 20px;
+        align-items: center;
+    }
+    .info{
+        flex-direction: row;
+        gap: 20px;
+        margin-right: auto;
+    }
+
+    .bio{
+        margin-top: 20px;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .bio a{
+        font-size: 1.6rem;
+    }
+
+    .skill{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 670px){
+
+    .logo{
+        font-size: 1.8rem;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+    }
+
+    .hero{
+        height: 60vh;
+    }
+    
+    .hero-heading{
+        font-size: 3.6rem;
+    }
+    
+    .hero-subheading{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-height: 650px ) and (max-width: 550px){
+    .section-heading{
+        font-size: 1.8rem;
+    }
+    .bio{
+        margin-top: 20px;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .bio a{
+        font-size: 1.4rem;
+    }
+
+    .skill{
+        font-size: 1.4rem;
+    }
+
+    .skills-heading{
+        font-size: 1.8rem; 
+    }
+
+    .icon{
+        width: 30px;
+    }
 }
