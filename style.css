@@ -20,6 +20,19 @@ body{
     margin-left: auto;
 }
 
+.separator{
+    background-color: #020617;
+    height: 30vh;
+}
+
+.section-heading{
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+/* ---------------------------> HEADER <--------------------------- */
 header{
     width: 100%;
     height: 7vh;
@@ -68,9 +81,10 @@ header{
     color: #fb923c;
 }
 
+/*---------------------------> HERO <---------------------------*/
 
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/hero.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -110,16 +124,11 @@ header{
     box-shadow: 0 5px 56px -25px #fb923c ;
 }
 
+/* ---------------------------> PROJECTS <--------------------------- */
+
 .projects{
-    height: 100vh;
     background-color: #fff;
     padding: 20px;
-}
-
-.projects-heading{
-    font-weight: 500;
-    font-size: 4rem;
-    text-align: center;
 }
 
 .underlined{
@@ -150,8 +159,10 @@ header{
 }
 
 .project h2{
+    font-weight: 500;
     font-size: 2.4rem;
     color: #ea580c;
+    margin-bottom: 7px;
 }
 
 .project p {
@@ -160,11 +171,13 @@ header{
 }
 
 .project a {
+    display: block;
     font-family: "Domine", serif;
     text-decoration: underline #fb923c;
     font-size: 1.8rem;
     color: #ea580c;
     font-weight: 600;
+    margin-bottom: 7px;
 }
 
 .project a:hover{
@@ -189,4 +202,110 @@ header{
     font-weight: 600;
     font-style: italic;
     font-size: 1.4rem;
+}
+
+/* ---------------------------> ABOUT <--------------------------- */
+
+.about{
+    background-color: #fff;
+    padding: 20px;
+    color: #020617;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr;   
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.avatar{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.bio{
+    font-family:"Domine" , serif;
+    font-size: 2rem;
+    width: 85%;
+    line-height: 1.8lh;
+    margin: 0 auto;
+    height: fit-content;
+    align-self: center;
+}
+
+.bio a{
+    text-decoration: underline #fb923c;
+    font-size: 1.8rem;
+    color: #ea580c;
+}
+
+.bio a:hover{
+    text-decoration: underline 2px #ea580c;
+}
+
+.bio h2{
+    font-family: "Open Sans", sans-serif;
+}
+
+.avatar{
+    display: block;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.info > h2{
+    font-size: 3rem;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: fit-content;
+    display: block;
+    font-size: 2.4rem;
+    color: #ea580c;
+    background-color: #020617;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* ---------------------------> Contacts <--------------------------- */
+
+.contacts{
+    padding: 60px 10px;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.icon{
+    display: block;
+    width: 40px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #020617;
+    padding: 20px 10px;
+    color: #f1f5f9;
+    font-size: 1.2rem;
+    text-align: center;
 }
