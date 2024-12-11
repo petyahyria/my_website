@@ -438,7 +438,7 @@ footer{
     }
 }
 
-@media (max-height: 650px ) and (max-width: 550px){
+@media (max-width: 550px){
     .section-heading{
         font-size: 1.8rem;
     }
@@ -462,5 +462,15 @@ footer{
 
     .icon{
         width: 30px;
+    }
+}
+
+@media (max-height: 500px){
+    header{
+        height: 13vh;
+        margin-bottom: -13vh;
+    }
+    .hero{
+        height: 100vh;
     }
 }
