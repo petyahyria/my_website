@@ -315,6 +315,10 @@ footer{
     text-align: center;
 }
 
+.invisible{
+    display: none;
+}
+
 
 @media (max-width: 1000px) {
     .logo{
