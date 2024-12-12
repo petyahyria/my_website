@@ -84,7 +84,7 @@ header{
 /*---------------------------> HERO <---------------------------*/
 
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/hero.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
